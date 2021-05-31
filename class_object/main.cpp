@@ -7,6 +7,7 @@ using namespace std;
 
 
 int main() {
+  //使用这里，可以用new.
   StaffMember staff_member("name", "address", "phone");
   cout << staff_member.tostring();
 //  String a = "fido";

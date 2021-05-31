@@ -1,10 +1,16 @@
+//package staffclass;
 //********************************************************************
 // StaffMember.java Author: Lewis/Loftus
 //
 // Represents a generic staff member.
 //********************************************************************
-abstract public class StaffMember
+//abstract public class StaffMember
+public class StaffMember
 {
+	//  abstract表示无法使用，只有继承后才可以使用。
+	//  public是所有的调用都可以使用
+	//  protected是只有类
+	//private
 	 protected String name;
 	 protected String address;
 	 protected String phone;
@@ -27,10 +33,18 @@ abstract public class StaffMember
 		 result += "Phone: " + phone;
 		 return result;
 	 }
+
+	public String testString()
+	{
+
+		return "result";
+	}
 	 //-----------------------------------------------------------------
 	 // Derived classes must define the pay method for each type of
 	 // employee.
 	 //-----------------------------------------------------------------
-	 public abstract double pay();//抽象类
+ 	public  double pay(){
+	 	return 0.0;
+	};//抽象类
 } //  找到StaffMember类里面有几个变量，分别是protected,private还是public，分别代码什么意思。
 //  函数      功能是什么，类型是什么。
