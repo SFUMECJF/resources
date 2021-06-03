@@ -17,3 +17,6 @@ add_executable(2113
 
 add_executable(2114
         6/2114.cpp)
+
+add_executable(2412
+        7/2412.cpp)
